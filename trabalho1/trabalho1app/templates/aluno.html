@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aluno</title>
+    <!-- Inclua os arquivos CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Aluno</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Período de Ingresso</th>
+                    <th>Nota</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="{% url 'index' %}">{{ aluno.nome }}</a></td>
+                    <td>{{ aluno.periodo_ingresso }}</td>
+                    <td>{{ aluno.nota }}</td>
+                    <td>{{ aluno.situacao }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Inclua o arquivo JavaScript do Bootstrap (opcional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
